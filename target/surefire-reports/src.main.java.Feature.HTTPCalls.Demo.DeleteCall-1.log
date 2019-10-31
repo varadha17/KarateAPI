@@ -1,0 +1,18 @@
+12:17:22.441 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:17:23.036 request:
+1 > DELETE http://localhost:8081/CreateAPI/webapi/users/3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+
+12:17:23.072 response time in milliseconds: 35.37
+1 < 204
+1 < Date: Thu, 31 Oct 2019 06:47:23 GMT
+
+econds: 33.35
+1 < 204
+1 < Date: Tue, 29 Oct 2019 09:26:45 GMT
+
+12:19:41.866 status code was: 204, expected: 200, response time: 61, url: http://localhost:8081/CreateAPI/webapi/users/3, response: 

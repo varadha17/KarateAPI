@@ -1,0 +1,33 @@
+08:57:38.268 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+08:57:38.268 request:
+1 > GET https://gorest.co.in/public-api/users?first_name=Badri&status=active
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer DR51Wbbg5flAACWiV-eKDQOQN7kRiPcdMvJD
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+
+08:57:38.601 response time in milliseconds: 326.12
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=UTF-8
+1 < Date: Sun, 27 Oct 2019 03:27:23 GMT
+1 < Link: <https://gorest.co.in/public-api/users?first_name=Badri&status=active&page=1>; rel=self
+1 < Server: nginx
+1 < Set-Cookie: _csrf=ead4c9f5b9c179ec5b54bde6c24959b955bb8ac6ae52be5985d3f7e3bffb2d79a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DmLPRWUG7MkDGBHDApTl5L3LsKjAXlsv%22%3B%7D; path=/; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Accept]
+1 < X-Pagination-Current-Page: 1
+1 < X-Pagination-Page-Count: 0
+1 < X-Pagination-Per-Page: 20
+1 < X-Pagination-Total-Count: 0
+1 < X-Rate-Limit-Limit: 30
+1 < X-Rate-Limit-Remaining: 27
+1 < X-Rate-Limit-Reset: 6
+{"_meta":{"success":true,"code":200,"message":"OK. Everything worked as expected.","totalCount":0,"pageCount":0,"currentPage":1,"perPage":20,"rateLimit":{"limit":30,"remaining":27,"reset":6}},"result":[]}
+
+08:57:38.601 assertion failed: path: $.result[*].last_name[*], actual: [], expected: 'Narayanan', reason: actual value does not contain expected
+9171","website":"http://donnelly.info/","address":"8191 Eldon Island\nNew Theodora, DE 89130-9057","status":"active","_links":{"self":{"href":"https://gorest.co.in/public-api/users/1711"},"edit":{"href":"https://gorest.co.in/public-api/users/1711"},"avatar":{"href":null}}}]}
+
+10:34:19.983 assertion failed: path: $.result[*].last_name[*], actual: ["Narayanan"], expected: 'Badri', reason: actual value does not contain expected
