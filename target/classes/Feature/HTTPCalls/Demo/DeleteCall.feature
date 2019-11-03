@@ -1,10 +1,11 @@
 Feature: Demo Using Delete Method
 
 	Background: 
-		Given url 'http://localhost:8081/CreateAPI'
-		When header Content-Type = 'application/json'
-		Then path '/webapi/users/3'
+		* url 'http://localhost:8081/CreateAPI'
+		* header Content-Type = 'application/json'
+		* path '/service/users/3'
 	
 	Scenario: Update users
 		Given method DELETE
 		Then status 204
+			And print 'Success'

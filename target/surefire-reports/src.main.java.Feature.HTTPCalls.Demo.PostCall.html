@@ -168,31 +168,31 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [1.1:15]</span><span class="scenario-name">Create a user using Post method</span>
+<span class="scenario-keyword">Scenario Outline: [1.1:16]</span><span class="scenario-name">Create a user using Post method</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Given url 'http://localhost:8081/CreateAPI'</div>
-<div class="time-cell passed">0.002445</div>
+<div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
+<div class="time-cell passed">0.003638</div>
 </div>
-<div class="preformatted">12:15:57.541 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">09:32:43.267 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">When header Content-Type = 'application/json'</div>
-<div class="time-cell passed">0.001685</div>
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+<div class="time-cell passed">0.0036</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Then path '/webapi/users'</div>
-<div class="time-cell passed">0.001556</div>
+<div class="step-cell passed">* path '/userinformation/users'</div>
+<div class="time-cell passed">0.002819</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given request { email: 'Varadharajan@gmail.com', firstName: 'Varadha', gender: 'male', lastName: 'Rajan', status: 'active'}</div>
-<div class="time-cell passed">0.039883</div>
+<div class="time-cell passed">0.186373</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method POST</div>
-<div class="time-cell passed">0.685993</div>
+<div class="time-cell passed">1.401652</div>
 </div>
-<div class="preformatted">12:15:58.185 request:
-1 &gt; POST http://localhost:8081/CreateAPI/webapi/users
+<div class="preformatted">09:32:44.649 request:
+1 &gt; POST http://localhost:8081/CreateAPI/userinformation/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 109
@@ -201,44 +201,49 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 {"email":"Varadharajan@gmail.com","firstName":"Varadha","gender":"male","lastName":"Rajan","status":"active"}
 
-12:15:58.284 response time in milliseconds: 97.37
+09:32:44.885 response time in milliseconds: 201.02
 1 &lt; 201
 1 &lt; Content-Length: 116
 1 &lt; Content-Type: application/json
-1 &lt; Date: Thu, 31 Oct 2019 06:45:58 GMT
-{"email":"Varadharajan@gmail.com","firstName":"Varadha","gender":"male","id":3,"lastName":"Rajan","status":"active"}</div>
+1 &lt; Date: Sun, 03 Nov 2019 04:02:44 GMT
+{"email":"Varadharajan@gmail.com","firstName":"Varadha","gender":"male","id":2,"lastName":"Rajan","status":"active"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 201</div>
-<div class="time-cell passed">0.000016</div>
+<div class="time-cell passed">0.000038</div>
 </div>
+<div class="step-row">
+<div class="step-cell passed">And print 'Success'</div>
+<div class="time-cell passed">0.004107</div>
+</div>
+<div class="preformatted">09:32:44.894 [print] Success</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [1.2:16]</span><span class="scenario-name">Create a user using Post method</span>
+<span class="scenario-keyword">Scenario Outline: [1.2:17]</span><span class="scenario-name">Create a user using Post method</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Given url 'http://localhost:8081/CreateAPI'</div>
-<div class="time-cell passed">0.000127</div>
+<div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
+<div class="time-cell passed">0.000213</div>
 </div>
-<div class="preformatted">12:15:58.298 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">09:32:44.921 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">When header Content-Type = 'application/json'</div>
-<div class="time-cell passed">0.000091</div>
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+<div class="time-cell passed">0.000263</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Then path '/webapi/users'</div>
-<div class="time-cell passed">0.000074</div>
+<div class="step-cell passed">* path '/userinformation/users'</div>
+<div class="time-cell passed">0.000285</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given request { email: 'Jeffrin@gmail.com', firstName: 'Jeffrin', gender: 'male', lastName: 'Poulin', status: 'inactive'}</div>
-<div class="time-cell passed">0.00018</div>
+<div class="time-cell passed">0.000536</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method POST</div>
-<div class="time-cell passed">0.006182</div>
+<div class="time-cell passed">0.011734</div>
 </div>
-<div class="preformatted">12:15:58.300 request:
-1 &gt; POST http://localhost:8081/CreateAPI/webapi/users
+<div class="preformatted">09:32:44.926 request:
+1 &gt; POST http://localhost:8081/CreateAPI/userinformation/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 107
@@ -247,44 +252,49 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 {"email":"Jeffrin@gmail.com","firstName":"Jeffrin","gender":"male","lastName":"Poulin","status":"inactive"}
 
-12:15:58.305 response time in milliseconds: 4.72
+09:32:44.936 response time in milliseconds: 8.82
 1 &lt; 201
 1 &lt; Content-Length: 114
 1 &lt; Content-Type: application/json
-1 &lt; Date: Thu, 31 Oct 2019 06:45:58 GMT
-{"email":"Jeffrin@gmail.com","firstName":"Jeffrin","gender":"male","id":4,"lastName":"Poulin","status":"inactive"}</div>
+1 &lt; Date: Sun, 03 Nov 2019 04:02:44 GMT
+{"email":"Jeffrin@gmail.com","firstName":"Jeffrin","gender":"male","id":3,"lastName":"Poulin","status":"inactive"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 201</div>
-<div class="time-cell passed">0.000008</div>
+<div class="time-cell passed">0.000013</div>
 </div>
+<div class="step-row">
+<div class="step-cell passed">And print 'Success'</div>
+<div class="time-cell passed">0.000472</div>
+</div>
+<div class="preformatted">09:32:44.937 [print] Success</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [1.3:17]</span><span class="scenario-name">Create a user using Post method</span>
+<span class="scenario-keyword">Scenario Outline: [1.3:18]</span><span class="scenario-name">Create a user using Post method</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Given url 'http://localhost:8081/CreateAPI'</div>
-<div class="time-cell passed">0.000121</div>
+<div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
+<div class="time-cell passed">0.000241</div>
 </div>
-<div class="preformatted">12:15:58.316 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">09:32:44.958 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">When header Content-Type = 'application/json'</div>
-<div class="time-cell passed">0.000081</div>
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+<div class="time-cell passed">0.000294</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Then path '/webapi/users'</div>
-<div class="time-cell passed">0.000071</div>
+<div class="step-cell passed">* path '/userinformation/users'</div>
+<div class="time-cell passed">0.000162</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given request { email: 'Vikram@gmail.com', firstName: 'Vikram', gender: 'male', lastName: 'Chandrasekar', status: 'inactive'}</div>
-<div class="time-cell passed">0.000144</div>
+<div class="time-cell passed">0.000318</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method POST</div>
-<div class="time-cell passed">0.005727</div>
+<div class="time-cell passed">0.013229</div>
 </div>
-<div class="preformatted">12:15:58.318 request:
-1 &gt; POST http://localhost:8081/CreateAPI/webapi/users
+<div class="preformatted">09:32:44.962 request:
+1 &gt; POST http://localhost:8081/CreateAPI/userinformation/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 111
@@ -293,16 +303,72 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 {"email":"Vikram@gmail.com","firstName":"Vikram","gender":"male","lastName":"Chandrasekar","status":"inactive"}
 
-12:15:58.322 response time in milliseconds: 4.34
+09:32:44.973 response time in milliseconds: 9.96
 1 &lt; 201
 1 &lt; Content-Length: 118
 1 &lt; Content-Type: application/json
-1 &lt; Date: Thu, 31 Oct 2019 06:45:58 GMT
-{"email":"Vikram@gmail.com","firstName":"Vikram","gender":"male","id":5,"lastName":"Chandrasekar","status":"inactive"}</div>
+1 &lt; Date: Sun, 03 Nov 2019 04:02:44 GMT
+{"email":"Vikram@gmail.com","firstName":"Vikram","gender":"male","id":4,"lastName":"Chandrasekar","status":"inactive"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 201</div>
-<div class="time-cell passed">0.000007</div>
+<div class="time-cell passed">0.000013</div>
 </div>
+<div class="step-row">
+<div class="step-cell passed">And print 'Success'</div>
+<div class="time-cell passed">0.000797</div>
+</div>
+<div class="preformatted">09:32:44.974 [print] Success</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario Outline: [1.4:19]</span><span class="scenario-name">Create a user using Post method</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
+<div class="time-cell passed">0.000283</div>
+</div>
+<div class="preformatted">09:32:44.995 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+<div class="time-cell passed">0.000193</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* path '/userinformation/users'</div>
+<div class="time-cell passed">0.000175</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given request { email: 'Ashwini@gmail.com', firstName: 'Ashwini', gender: 'female', lastName: 'Kumar', status: 'active'}</div>
+<div class="time-cell passed">0.000311</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method POST</div>
+<div class="time-cell passed">0.016011</div>
+</div>
+<div class="preformatted">09:32:45.002 request:
+1 &gt; POST http://localhost:8081/CreateAPI/userinformation/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 106
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8081
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","lastName":"Kumar","status":"active"}
+
+09:32:45.016 response time in milliseconds: 12.41
+1 &lt; 201
+1 &lt; Content-Length: 113
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 03 Nov 2019 04:02:44 GMT
+{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","id":5,"lastName":"Kumar","status":"active"}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 201</div>
+<div class="time-cell passed">0.000017</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And print 'Success'</div>
+<div class="time-cell passed">0.000834</div>
+</div>
+<div class="preformatted">09:32:45.017 [print] Success</div>
 </div>
 </div>
 </body>

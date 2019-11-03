@@ -1,18 +1,20 @@
-18:05:54.191 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-18:05:54.860 request:
-1 > GET http://localhost:8081/CreateAPI/webapi/users
+10:11:34.154 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:11:35.734 request:
+1 > GET http://localhost:8081/CreateAPI/userinformation/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Content-Type: application/json
 1 > Host: localhost:8081
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-18:05:54.907 response time in milliseconds: 43.24
+10:11:35.878 response time in milliseconds: 140.24
 1 < 200
-1 < Content-Length: 595
+1 < Content-Length: 580
 1 < Content-Type: application/json
-1 < Date: Wed, 30 Oct 2019 12:35:54 GMT
-[{"email":"Badri@gmail.com","firstName":"Badri","gender":"male","id":1,"lastName":"Narayanan","status":"inactive"},{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","id":2,"lastName":"Kumar","status":"active"},{"email":"Varadharajan@gmail.com","firstName":"Varadharajan","gender":"male","id":3,"lastName":"Thiruvengadam","status":"active"},{"email":"Jeffrin@gmail.com","firstName":"Jeffrin","gender":"male","id":4,"lastName":"Poulin","status":"inactive"},{"email":"abinaya@gmail.com","firstName":"abinaya","gender":"female","id":5,"lastName":"Mathivanan","status":"inactive"}]
+1 < Date: Sat, 02 Nov 2019 04:41:35 GMT
+[{"email":"Badri@gmail.com","firstName":"Badri","gender":"male","id":1,"lastName":"Narayanan","status":"inactive"},{"email":"Varadharajan@gmail.com","firstName":"Varadha","gender":"male","id":2,"lastName":"Rajan","status":"active"},{"email":"Jeffrin@gmail.com","firstName":"Jeffrin","gender":"male","id":3,"lastName":"Poulin","status":"inactive"},{"email":"Vikram@gmail.com","firstName":"Vikram","gender":"male","id":4,"lastName":"Chandrasekar","status":"inactive"},{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","id":5,"lastName":"Kumar","status":"active"}]
+
+"}]
 
 on-Page-Count: 112
 1 < X-Pagination-Per-Page: 20

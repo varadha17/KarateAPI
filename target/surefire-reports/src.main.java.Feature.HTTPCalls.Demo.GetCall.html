@@ -171,39 +171,39 @@
 <span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">Get all users</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Given url 'http://localhost:8081/CreateAPI'</div>
-<div class="time-cell passed">0.002492</div>
+<div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
+<div class="time-cell passed">0.006982</div>
 </div>
-<div class="preformatted">18:05:54.191 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">10:11:34.154 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">When header Content-Type = 'application/json'</div>
-<div class="time-cell passed">0.001656</div>
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+<div class="time-cell passed">0.005019</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Then path '/webapi/users'</div>
-<div class="time-cell passed">0.00147</div>
+<div class="step-cell passed">* path '/userinformation/users'</div>
+<div class="time-cell passed">0.004017</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given method GET</div>
-<div class="time-cell passed">0.734886</div>
+<div class="time-cell passed">1.771645</div>
 </div>
-<div class="preformatted">18:05:54.860 request:
-1 &gt; GET http://localhost:8081/CreateAPI/webapi/users
+<div class="preformatted">10:11:35.734 request:
+1 &gt; GET http://localhost:8081/CreateAPI/userinformation/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Type: application/json
 1 &gt; Host: localhost:8081
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-18:05:54.907 response time in milliseconds: 43.24
+10:11:35.878 response time in milliseconds: 140.24
 1 &lt; 200
-1 &lt; Content-Length: 595
+1 &lt; Content-Length: 580
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 30 Oct 2019 12:35:54 GMT
-[{"email":"Badri@gmail.com","firstName":"Badri","gender":"male","id":1,"lastName":"Narayanan","status":"inactive"},{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","id":2,"lastName":"Kumar","status":"active"},{"email":"Varadharajan@gmail.com","firstName":"Varadharajan","gender":"male","id":3,"lastName":"Thiruvengadam","status":"active"},{"email":"Jeffrin@gmail.com","firstName":"Jeffrin","gender":"male","id":4,"lastName":"Poulin","status":"inactive"},{"email":"abinaya@gmail.com","firstName":"abinaya","gender":"female","id":5,"lastName":"Mathivanan","status":"inactive"}]</div>
+1 &lt; Date: Sat, 02 Nov 2019 04:41:35 GMT
+[{"email":"Badri@gmail.com","firstName":"Badri","gender":"male","id":1,"lastName":"Narayanan","status":"inactive"},{"email":"Varadharajan@gmail.com","firstName":"Varadha","gender":"male","id":2,"lastName":"Rajan","status":"active"},{"email":"Jeffrin@gmail.com","firstName":"Jeffrin","gender":"male","id":3,"lastName":"Poulin","status":"inactive"},{"email":"Vikram@gmail.com","firstName":"Vikram","gender":"male","id":4,"lastName":"Chandrasekar","status":"inactive"},{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","id":5,"lastName":"Kumar","status":"active"}]</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000012</div>
+<div class="time-cell passed">0.00003</div>
 </div>
 </div>
 <div class="scenario">
@@ -211,57 +211,65 @@
 <span class="scenario-keyword">Scenario: [2:12]</span><span class="scenario-name">Get user with firstname and lastname</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Given url 'http://localhost:8081/CreateAPI'</div>
-<div class="time-cell passed">0.000157</div>
+<div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
+<div class="time-cell passed">0.000451</div>
 </div>
-<div class="preformatted">18:05:54.960 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">10:11:36.027 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">When header Content-Type = 'application/json'</div>
-<div class="time-cell passed">0.000099</div>
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+<div class="time-cell passed">0.000374</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Then path '/webapi/users'</div>
-<div class="time-cell passed">0.000079</div>
+<div class="step-cell passed">* path '/userinformation/users'</div>
+<div class="time-cell passed">0.000354</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given param firstName = 'Ashwini'</div>
-<div class="time-cell passed">0.002448</div>
+<div class="time-cell passed">0.005849</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And param lastName = 'Kumar'</div>
-<div class="time-cell passed">0.001739</div>
+<div class="time-cell passed">0.004132</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And param gender = 'female'</div>
+<div class="time-cell passed">0.004458</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method GET</div>
-<div class="time-cell passed">0.008316</div>
+<div class="time-cell passed">0.028392</div>
 </div>
-<div class="preformatted">18:05:54.976 request:
-1 &gt; GET http://localhost:8081/CreateAPI/webapi/users?firstName=Ashwini&amp;lastName=Kumar
+<div class="preformatted">10:11:36.052 request:
+1 &gt; GET http://localhost:8081/CreateAPI/userinformation/users?firstName=Ashwini&amp;lastName=Kumar&amp;gender=female
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Type: application/json
 1 &gt; Host: localhost:8081
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-18:05:54.976 response time in milliseconds: 5.80
+10:11:36.074 response time in milliseconds: 12.88
 1 &lt; 200
 1 &lt; Content-Length: 115
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 30 Oct 2019 12:35:54 GMT
-[{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","id":2,"lastName":"Kumar","status":"active"}]</div>
+1 &lt; Date: Sat, 02 Nov 2019 04:41:35 GMT
+[{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","id":5,"lastName":"Kumar","status":"active"}]</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000008</div>
+<div class="time-cell passed">0.000012</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Then match $[*].email contains ["Ashwini@gmail.com"]</div>
-<div class="time-cell passed">0.010854</div>
+<div class="step-cell passed">Then match response[*].email contains ["Ashwini@gmail.com"]</div>
+<div class="time-cell passed">0.025626</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">And print 'Success'</div>
-<div class="time-cell passed">0.002038</div>
+<div class="step-cell passed">Then def result = 'Success'</div>
+<div class="time-cell passed">0.004873</div>
 </div>
-<div class="preformatted">18:05:54.992 [print] Success</div>
+<div class="step-row">
+<div class="step-cell passed">And print result</div>
+<div class="time-cell passed">0.000475</div>
+</div>
+<div class="preformatted">10:11:36.107 [print] Success</div>
 </div>
 </div>
 </body>

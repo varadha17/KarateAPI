@@ -1,9 +1,9 @@
 Feature: Demo Using Get Method
 
 	Background: 
-		Given url 'http://localhost:8081/CreateAPI'
-		When header Content-Type = 'application/json'
-		Then path '/webapi/users'
+		* url 'http://localhost:8081/CreateAPI'
+		* header Content-Type = 'application/json'
+		* path '/service/users'
 		
 	Scenario: Get all users
 		Given method GET
@@ -12,7 +12,14 @@ Feature: Demo Using Get Method
 	Scenario: Get user with firstname and lastname
 		Given param firstName = 'Ashwini'
 			And param lastName = 'Kumar'
+			And param gender = 'female'
 		When method GET
 		Then status 200
-		Then match $[*].email contains ["Ashwini@gmail.com"]
+		Then match response[*].email contains ["Ashwini@gmail.com"]
+		Then def result = 'Success'
+			And print result
 		
+		
+	#Difference:
+		# Gherkin keyword or *
+		# response or $

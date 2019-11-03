@@ -171,37 +171,42 @@
 <span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">Update users</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Given url 'http://localhost:8081/CreateAPI'</div>
-<div class="time-cell passed">0.002682</div>
+<div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
+<div class="time-cell passed">0.004754</div>
 </div>
-<div class="preformatted">12:17:22.441 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">09:48:06.902 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">When header Content-Type = 'application/json'</div>
-<div class="time-cell passed">0.00173</div>
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+<div class="time-cell passed">0.007533</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Then path '/webapi/users/3'</div>
-<div class="time-cell passed">0.001388</div>
+<div class="step-cell passed">* path '/userinformation/users/3'</div>
+<div class="time-cell passed">0.003219</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given method DELETE</div>
-<div class="time-cell passed">0.614135</div>
+<div class="time-cell passed">1.416335</div>
 </div>
-<div class="preformatted">12:17:23.036 request:
-1 &gt; DELETE http://localhost:8081/CreateAPI/webapi/users/3
+<div class="preformatted">09:48:08.220 request:
+1 &gt; DELETE http://localhost:8081/CreateAPI/userinformation/users/3
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Type: application/json
 1 &gt; Host: localhost:8081
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-12:17:23.072 response time in milliseconds: 35.37
+09:48:08.359 response time in milliseconds: 137.72
 1 &lt; 204
-1 &lt; Date: Thu, 31 Oct 2019 06:47:23 GMT</div>
+1 &lt; Date: Sat, 02 Nov 2019 04:18:08 GMT</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 204</div>
-<div class="time-cell passed">0.000011</div>
+<div class="time-cell passed">0.000059</div>
 </div>
+<div class="step-row">
+<div class="step-cell passed">And print 'Success'</div>
+<div class="time-cell passed">0.005166</div>
+</div>
+<div class="preformatted">09:48:08.366 [print] Success</div>
 </div>
 </div>
 </body>

@@ -168,31 +168,31 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [1.1:14]</span><span class="scenario-name">Update users</span>
+<span class="scenario-keyword">Scenario Outline: [1.1:15]</span><span class="scenario-name">Update users</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Given url 'http://localhost:8081/CreateAPI'</div>
-<div class="time-cell passed">0.002273</div>
+<div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
+<div class="time-cell passed">0.00388</div>
 </div>
-<div class="preformatted">12:16:41.117 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">09:49:13.313 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">When header Content-Type = 'application/json'</div>
-<div class="time-cell passed">0.001749</div>
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+<div class="time-cell passed">0.007308</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Then path '/webapi/users/3'</div>
-<div class="time-cell passed">0.001545</div>
+<div class="step-cell passed">* path '/userinformation/users/3'</div>
+<div class="time-cell passed">0.002956</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given request { email: 'Varadharajan@gmail.com', firstName: 'Varadharajan', gender: 'male', lastName: 'Thiruvengadam', status: 'active'}</div>
-<div class="time-cell passed">0.042404</div>
+<div class="time-cell passed">0.066454</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method PUT</div>
-<div class="time-cell passed">0.653729</div>
+<div class="time-cell passed">1.2414</div>
 </div>
-<div class="preformatted">12:16:41.787 request:
-1 &gt; PUT http://localhost:8081/CreateAPI/webapi/users/3
+<div class="preformatted">09:49:14.582 request:
+1 &gt; PUT http://localhost:8081/CreateAPI/userinformation/users/3
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 122
@@ -201,15 +201,15 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 {"email":"Varadharajan@gmail.com","firstName":"Varadharajan","gender":"male","lastName":"Thiruvengadam","status":"active"}
 
-12:16:41.830 response time in milliseconds: 41.75
+09:49:14.656 response time in milliseconds: 72.46
 1 &lt; 200
 1 &lt; Content-Length: 129
 1 &lt; Content-Type: application/json
-1 &lt; Date: Thu, 31 Oct 2019 06:46:41 GMT
+1 &lt; Date: Sat, 02 Nov 2019 04:19:14 GMT
 {"email":"Varadharajan@gmail.com","firstName":"Varadharajan","gender":"male","id":3,"lastName":"Thiruvengadam","status":"active"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000023</div>
+<div class="time-cell passed">0.000027</div>
 </div>
 </div>
 </div>

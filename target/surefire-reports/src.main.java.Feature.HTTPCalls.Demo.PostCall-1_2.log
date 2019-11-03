@@ -1,6 +1,6 @@
-12:15:58.298 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-12:15:58.300 request:
-1 > POST http://localhost:8081/CreateAPI/webapi/users
+09:32:44.921 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+09:32:44.926 request:
+1 > POST http://localhost:8081/CreateAPI/userinformation/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Content-Length: 107
@@ -9,15 +9,16 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 {"email":"Jeffrin@gmail.com","firstName":"Jeffrin","gender":"male","lastName":"Poulin","status":"inactive"}
 
-12:15:58.305 response time in milliseconds: 4.72
+09:32:44.936 response time in milliseconds: 8.82
 1 < 201
 1 < Content-Length: 114
 1 < Content-Type: application/json
-1 < Date: Thu, 31 Oct 2019 06:45:58 GMT
-{"email":"Jeffrin@gmail.com","firstName":"Jeffrin","gender":"male","id":4,"lastName":"Poulin","status":"inactive"}
+1 < Date: Sun, 03 Nov 2019 04:02:44 GMT
+{"email":"Jeffrin@gmail.com","firstName":"Jeffrin","gender":"male","id":3,"lastName":"Poulin","status":"inactive"}
 
+09:32:44.937 [print] Success
 
-tyle type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Message</b> Not Found</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/9.0.27</h3></body></html>
+ahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Message</b> Not Found</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/9.0.27</h3></body></html>
 
 11:56:44.963 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
 11:56:44.963 status code was: 404, expected: 201, response time: 14, url: http://localhost:8081/CreateAPI/webapi/users, response: <!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Message</b> Not Found</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/9.0.27</h3></body></html>

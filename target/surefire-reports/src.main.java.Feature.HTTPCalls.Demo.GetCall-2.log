@@ -1,22 +1,24 @@
-18:05:54.960 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-18:05:54.976 request:
-1 > GET http://localhost:8081/CreateAPI/webapi/users?firstName=Ashwini&lastName=Kumar
+10:11:36.027 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+10:11:36.052 request:
+1 > GET http://localhost:8081/CreateAPI/userinformation/users?firstName=Ashwini&lastName=Kumar&gender=female
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Content-Type: application/json
 1 > Host: localhost:8081
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-18:05:54.976 response time in milliseconds: 5.80
+10:11:36.074 response time in milliseconds: 12.88
 1 < 200
 1 < Content-Length: 115
 1 < Content-Type: application/json
-1 < Date: Wed, 30 Oct 2019 12:35:54 GMT
-[{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","id":2,"lastName":"Kumar","status":"active"}]
+1 < Date: Sat, 02 Nov 2019 04:41:35 GMT
+[{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","id":5,"lastName":"Kumar","status":"active"}]
 
-18:05:54.992 [print] Success
-, actual: [{"date":"2019-10-29T16:01:12.101Z[UTC]","email":"Ashwini@gmail.com","firstName":"Ashwini","id":2,"lastName":"Kumar"}], expected: {lastName=Kumar}, reason: actual value does not contain expected
-3:03:54.035Z[UTC]","email":"Badri@gmail.com","firstName":"Badri","id":1,"lastName":"Narayanan"},{"date":"2019-10-29T13:03:54.035Z[UTC]","email":"Ashwini@gmail.com","firstName":"Ashwini","id":2,"lastName":"Kumar"}], expected: {date=#notnull}, reason: actual value does not contain expected
+10:11:36.107 [print] Success
+*], actual: [{"email":"Ashwini@gmail.com","firstName":"Ashwini","gender":"female","id":5,"lastName":"Kumar","status":"active"}], expected: {firstName=#string}, reason: actual value does not contain expected
+ed
+
+dri@gmail.com","firstName":"Badri","id":1,"lastName":"Narayanan"},{"date":"2019-10-29T13:03:54.035Z[UTC]","email":"Ashwini@gmail.com","firstName":"Ashwini","id":2,"lastName":"Kumar"}], expected: {date=#notnull}, reason: actual value does not contain expected
 ing: 28
 1 < X-Rate-Limit-Reset: 4
 {"_meta":{"success":true,"code":200,"message":"OK. Everything worked as expected.","totalCount":3,"pageCount":1,"currentPage":1,"perPage":20,"rateLimit":{"limit":30,"remaining":28,"reset":4}},"result":[{"id":"107","first_name":"Johnathon","last_name":"Abbott","gender":"male","dob":"1924-10-27","email":"irunte@example.com","phone":"+1.561.971.8871","website":"http://www.crist.org/","address":"6149 Dare Viaduct\nCraigfurt, CO 27545","status":"inactive","_links":{"self":{"href":"https://gorest.co.in/public-api/users/107"},"edit":{"href":"https://gorest.co.in/public-api/users/107"},"avatar":{"href":"https://lorempixel.com/250/250/people/?99150"}}},{"id":"865","first_name":"Johnnie","last_name":"Abbott","gender":"male","dob":"1969-03-24","email":"dario59@example.net","phone":"541-838-8734 x318","website":"http://jerde.com/et-rerum-voluptas-tempore-id-cumque","address":"57675 Gutkowski Cove Suite 424\nManteburgh, VT 73782","status":"inactive","_links":{"self":{"href":"https://gorest.co.in/public-api/users/865"},"edit":{"href":"https://gorest.co.in/public-api/users/865"},"avatar":{"href":"https://lorempixel.com/250/250/people/?27398"}}},{"id":"1954","first_name":"John","last_name":"Watsica","gender":"male","dob":"2017-06-22","email":"rhoppe@example.com","phone":"454-507-8302","website":"http://www.kautzer.org/omnis-unde-quia-veniam-aut-quidem-dicta-optio","address":"520 Hagenes Lane\nPort Verda, SC 93722-4838","status":"inactive","_links":{"self":{"href":"https://gorest.co.in/public-api/users/1954"},"edit":{"href":"https://gorest.co.in/public-api/users/1954"},"avatar":{"href":"https://lorempixel.com/250/250/people/?78390"}}}]}
