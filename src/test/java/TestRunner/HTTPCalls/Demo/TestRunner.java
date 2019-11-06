@@ -8,7 +8,8 @@ import com.intuit.karate.junit4.Karate;
 @RunWith(Karate.class)
 @KarateOptions(
 		
-		features = "C:\\Users\\Varadharajan.Thiruve\\eclipse-workspace\\KarateAPIDemo\\src\\main\\java\\Feature\\HTTPCalls\\Demo\\PostCall.feature"
+		features = "C:\\Users\\Varadharajan.Thiruve\\eclipse-workspace\\KarateAPIDemo\\src\\main\\java\\Feature\\HTTPCalls\\Demo"
+		, tags= {"~@post","~@get","~@update","~@delete"}
 		
 		)
 

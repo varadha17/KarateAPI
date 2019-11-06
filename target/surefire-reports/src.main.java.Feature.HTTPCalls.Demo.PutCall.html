@@ -168,31 +168,31 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [1.1:15]</span><span class="scenario-name">Update users</span>
+<span class="scenario-keyword">Scenario Outline: [1.1:18]</span><span class="scenario-name">Update users</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
-<div class="time-cell passed">0.00388</div>
+<div class="time-cell passed">0.002339</div>
 </div>
-<div class="preformatted">09:49:13.313 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">17:54:05.716 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">* header Content-Type = 'application/json'</div>
-<div class="time-cell passed">0.007308</div>
+<div class="time-cell passed">0.00174</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* path '/userinformation/users/3'</div>
-<div class="time-cell passed">0.002956</div>
+<div class="step-cell passed">Given path '/service/users/2'</div>
+<div class="time-cell passed">0.001579</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Given request { email: 'Varadharajan@gmail.com', firstName: 'Varadharajan', gender: 'male', lastName: 'Thiruvengadam', status: 'active'}</div>
-<div class="time-cell passed">0.066454</div>
+<div class="step-cell passed">When request { email: 'Varadharajan@gmail.com', firstName: 'Varadharajan', gender: 'male', lastName: 'Thiruvengadam', status: 'active'}</div>
+<div class="time-cell passed">0.047263</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method PUT</div>
-<div class="time-cell passed">1.2414</div>
+<div class="time-cell passed">0.679366</div>
 </div>
-<div class="preformatted">09:49:14.582 request:
-1 &gt; PUT http://localhost:8081/CreateAPI/userinformation/users/3
+<div class="preformatted">17:54:06.409 request:
+1 &gt; PUT http://localhost:8081/CreateAPI/service/users/2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 122
@@ -201,16 +201,123 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 {"email":"Varadharajan@gmail.com","firstName":"Varadharajan","gender":"male","lastName":"Thiruvengadam","status":"active"}
 
-09:49:14.656 response time in milliseconds: 72.46
+17:54:06.452 response time in milliseconds: 43.50
 1 &lt; 200
 1 &lt; Content-Length: 129
 1 &lt; Content-Type: application/json
-1 &lt; Date: Sat, 02 Nov 2019 04:19:14 GMT
-{"email":"Varadharajan@gmail.com","firstName":"Varadharajan","gender":"male","id":3,"lastName":"Thiruvengadam","status":"active"}</div>
+1 &lt; Date: Wed, 06 Nov 2019 12:24:06 GMT
+{"email":"Varadharajan@gmail.com","firstName":"Varadharajan","gender":"male","id":2,"lastName":"Thiruvengadam","status":"active"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000027</div>
+<div class="time-cell passed">0.000012</div>
 </div>
+<div class="step-row">
+<div class="step-cell passed">And print 'Success'</div>
+<div class="time-cell passed">0.001805</div>
+</div>
+<div class="preformatted">17:54:06.455 [print] Success</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario Outline: [1.2:19]</span><span class="scenario-name">Update users</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
+<div class="time-cell passed">0.000131</div>
+</div>
+<div class="preformatted">17:54:06.464 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+<div class="time-cell passed">0.000086</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given path '/service/users/3'</div>
+<div class="time-cell passed">0.001797</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When request { email: 'Vikram@gmail.com', firstName: 'Vikram', gender: 'male', lastName: 'Chandrasekar', status: 'inactive'}</div>
+<div class="time-cell passed">0.000286</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method PUT</div>
+<div class="time-cell passed">0.013805</div>
+</div>
+<div class="preformatted">17:54:06.469 request:
+1 &gt; PUT http://localhost:8081/CreateAPI/service/users/3
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 111
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8081
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+{"email":"Vikram@gmail.com","firstName":"Vikram","gender":"male","lastName":"Chandrasekar","status":"inactive"}
+
+17:54:06.481 response time in milliseconds: 7.90
+1 &lt; 200
+1 &lt; Content-Length: 118
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 06 Nov 2019 12:24:06 GMT
+{"email":"Vikram@gmail.com","firstName":"Vikram","gender":"male","id":3,"lastName":"Chandrasekar","status":"inactive"}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000009</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And print 'Success'</div>
+<div class="time-cell passed">0.000298</div>
+</div>
+<div class="preformatted">17:54:06.482 [print] Success</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: [2:22]</span><span class="scenario-name">Update Products</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url 'http://localhost:8081/CreateAPI'</div>
+<div class="time-cell passed">0.000147</div>
+</div>
+<div class="preformatted">17:54:06.493 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-cell passed">* header Content-Type = 'application/json'</div>
+<div class="time-cell passed">0.00011</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given path '/service/products/2'</div>
+<div class="time-cell passed">0.001626</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When request { "productCode": "Ml548e", "productName": "Milk", "productPrice": 20.0, "totalProductsAvailable": 20}</div>
+<div class="time-cell passed">0.000186</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method PUT</div>
+<div class="time-cell passed">0.00761</div>
+</div>
+<div class="preformatted">17:54:06.497 request:
+1 &gt; PUT http://localhost:8081/CreateAPI/service/products/2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 93
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8081
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+{"productCode":"Ml548e","productName":"Milk","productPrice":20.0,"totalProductsAvailable":20}
+
+17:54:06.503 response time in milliseconds: 5.84
+1 &lt; 200
+1 &lt; Content-Length: 100
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 06 Nov 2019 12:24:06 GMT
+{"id":2,"productCode":"Ml548e","productName":"Milk","productPrice":20.0,"totalProductsAvailable":20}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000008</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And print 'Success'</div>
+<div class="time-cell passed">0.000251</div>
+</div>
+<div class="preformatted">17:54:06.504 [print] Success</div>
 </div>
 </div>
 </body>

@@ -1,0 +1,19 @@
+12:18:26.934 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:18:26.944 request:
+1 > POST http://localhost:8081/CreateAPI/service/products
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 95
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8081
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+{"productCode":"pcl345e","productName":"pen","productPrice":10.0,"totalProductsAvailable":2000}
+
+12:18:26.976 response time in milliseconds: 31.26
+1 < 201
+1 < Content-Length: 102
+1 < Content-Type: application/json
+1 < Date: Tue, 05 Nov 2019 06:48:26 GMT
+{"id":2,"productCode":"pcl345e","productName":"pen","productPrice":10.0,"totalProductsAvailable":2000}
+
+12:18:26.977 [print] Success

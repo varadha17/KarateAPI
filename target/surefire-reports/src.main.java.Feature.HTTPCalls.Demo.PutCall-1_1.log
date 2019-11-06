@@ -1,6 +1,6 @@
-09:49:13.313 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-09:49:14.582 request:
-1 > PUT http://localhost:8081/CreateAPI/userinformation/users/3
+17:54:05.716 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+17:54:06.409 request:
+1 > PUT http://localhost:8081/CreateAPI/service/users/2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Content-Length: 122
@@ -9,10 +9,11 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 {"email":"Varadharajan@gmail.com","firstName":"Varadharajan","gender":"male","lastName":"Thiruvengadam","status":"active"}
 
-09:49:14.656 response time in milliseconds: 72.46
+17:54:06.452 response time in milliseconds: 43.50
 1 < 200
 1 < Content-Length: 129
 1 < Content-Type: application/json
-1 < Date: Sat, 02 Nov 2019 04:19:14 GMT
-{"email":"Varadharajan@gmail.com","firstName":"Varadharajan","gender":"male","id":3,"lastName":"Thiruvengadam","status":"active"}
+1 < Date: Wed, 06 Nov 2019 12:24:06 GMT
+{"email":"Varadharajan@gmail.com","firstName":"Varadharajan","gender":"male","id":2,"lastName":"Thiruvengadam","status":"active"}
 
+17:54:06.455 [print] Success
